@@ -4,7 +4,7 @@ from app.serializers import BeagleFarmSerializer
 
 from app.models import BeagleFarm
 
-class BeagleFarmListAPIView(generics.ListAPIView):
+class BeagleFarmListAPIView(generics.ListCreateAPIView):
     # queryset = BeagleFarm.objects.all()  # ditched this when we created get_queryset
     serializer_class = BeagleFarmSerializer
 
